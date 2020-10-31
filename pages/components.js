@@ -23,6 +23,8 @@ import SectionNotifications from "pages-sections/Components-Sections/SectionNoti
 import SectionTypography from "pages-sections/Components-Sections/SectionTypography.js";
 import SectionJavascript from "pages-sections/Components-Sections/SectionJavascript.js";
 import SectionCarousel from "pages-sections/Components-Sections/SectionCarousel.js";
+import SectionOpening from "../pages-sections/Components-Sections/SectionOpening";
+import SectionAboutUs from "../pages-sections/Components-Sections/SectionAboutUs";
 import SectionCompletedExamples from "pages-sections/Components-Sections/SectionCompletedExamples.js";
 import SectionLogin from "pages-sections/Components-Sections/SectionLogin.js";
 import SectionExamples from "pages-sections/Components-Sections/SectionExamples.js";
@@ -38,7 +40,7 @@ export default function Components(props) {
   return (
     <div>
       <Header
-        brand="NextJS Material Kit"
+        brand="Tech Tag"
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"
@@ -48,14 +50,14 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/nextjs_header.jpg")}>
+      <Parallax image={require("assets/img/header_photo.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>NextJS Material Kit.</h1>
+                <h1 className={classes.title}>Tech Tag</h1>
                 <h3 className={classes.subtitle}>
-                  A Badass Material Kit based on Material-UI and NextJS.
+                    Лучшие услуги по продаже и покупки
                 </h3>
               </div>
             </GridItem>
@@ -64,27 +66,29 @@ export default function Components(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionBasics />
-        <SectionNavbars />
-        <SectionTabs />
-        <SectionPills />
-        <SectionNotifications />
-        <SectionTypography />
-        <SectionJavascript />
+        {/*<SectionBasics />*/}
+        {/*<SectionNavbars />*/}
+        {/*<SectionTabs />*/}
+        {/*<SectionPills />*/}
+        {/*<SectionNotifications />*/}
+        {/*<SectionTypography />*/}
+        {/*<SectionJavascript />*/}
+        <SectionOpening />
         <SectionCarousel />
-        <SectionCompletedExamples />
-        <SectionLogin />
-        <GridItem md={12} className={classes.textCenter}>
-          <Link href="/login">
-            <a className={classes.link}>
-              <Button color="primary" size="lg" simple>
-                View Login Page
-              </Button>
-            </a>
-          </Link>
-        </GridItem>
-        <SectionExamples />
-        <SectionDownload />
+        <SectionAboutUs />
+        {/*<SectionCompletedExamples />*/}
+        {/*<SectionLogin />*/}
+        {/*<GridItem md={12} className={classes.textCenter}>*/}
+        {/*  <Link href="/login">*/}
+        {/*    <a className={classes.link}>*/}
+        {/*      <Button color="primary" size="lg" simple>*/}
+        {/*        View Login Page*/}
+        {/*      </Button>*/}
+        {/*    </a>*/}
+        {/*  </Link>*/}
+        {/*</GridItem>*/}
+        {/*<SectionExamples />*/}
+        {/*<SectionDownload />*/}
       </div>
       <Footer />
     </div>
