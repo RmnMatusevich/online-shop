@@ -24,9 +24,10 @@ collections:
         name: "main"
         file: "content/main.md"
         fields:
-#            - { label: "BackgroundImage", name: "backgroundImage", widget: "image"}
           - { label: "Title", name: "title", widget: "string"}
           - { label: "Subtitle", name: "subtitle", widget: "string"}
+          - { label: "BackgroundImage", name: "backgroundImage", widget: "image"}
+
 #            - label: 'Cats'
 #              name: "cats"
 #              widget: list
