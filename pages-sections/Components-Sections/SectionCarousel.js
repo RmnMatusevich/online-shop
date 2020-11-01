@@ -15,6 +15,7 @@ import image2 from "assets/img/bg2.jpg";
 import image3 from "assets/img/bg3.jpg";
 
 import styles from "assets/jss/nextjs-material-kit/pages/componentsSections/carouselStyle.js";
+import { attributes, react as HomeContent } from '../../content/main.md';
 
 const useStyles = makeStyles(styles);
 
@@ -26,7 +27,7 @@ export default function SectionCarousel() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false
+    autoplay: true
   };
   return (
     <div className={classes.section}>
@@ -35,37 +36,21 @@ export default function SectionCarousel() {
           <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
             <Card carousel>
               <Carousel {...settings}>
-                <div>
-                  <img src={image1} alt="First slide" className="slick-image" />
-                  <div className="slick-caption">
-                    <h4>
-                      <LocationOn className="slick-icons" />
-                      Yellowstone National Park, United States
-                    </h4>
-                  </div>
-                </div>
-                <div>
-                  <img
-                    src={image2}
-                    alt="Second slide"
-                    className="slick-image"
-                  />
-                  <div className="slick-caption">
-                    <h4>
-                      <LocationOn className="slick-icons" />
-                      Somewhere Beyond, United States
-                    </h4>
-                  </div>
-                </div>
-                <div>
-                  <img src={image3} alt="Third slide" className="slick-image" />
-                  <div className="slick-caption">
-                    <h4>
-                      <LocationOn className="slick-icons" />
-                      Yellowstone National Park, United States
-                    </h4>
-                  </div>
-                </div>
+                {attributes.carousel.map(i => {
+                  return (<div>
+                            <img src={i.image} alt="Slide" className="slick-image" />
+                          </div>)
+                })}
+                {/*<div>*/}
+                {/*  <img src={image1} alt="First slide" className="slick-image" />*/}
+                {/*</div>*/}
+                {/*<div>*/}
+                {/*  <img src={image2} alt="Second slide" className="slick-image"*/}
+                {/*  />*/}
+                {/*</div>*/}
+                {/*<div>*/}
+                {/*  <img src={image3} alt="Third slide" className="slick-image" />*/}
+                {/*</div>*/}
               </Carousel>
             </Card>
           </GridItem>

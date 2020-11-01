@@ -27,10 +27,9 @@ collections:
           - { label: "Title", name: "title", widget: "string"}
           - { label: "Subtitle", name: "subtitle", widget: "string"}
           - { label: "BackgroundImage", name: "backgroundImage", widget: "image"}
-
-#            - label: 'Cats'
-#              name: "cats"
-#              widget: list
-#              fields:
-#                - { label: "Name", name: "name", widget: "string"}
-#                - { label: "Description", name: "description", widget: "text"}
+          - label: 'Carousel'
+            name: "carousel"
+            widget: list
+            fields:
+              - { label: "Image", name: "image", widget: "image"}
+#              - { label: "Description", name: "description", widget: "text"}
