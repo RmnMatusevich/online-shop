@@ -63,7 +63,7 @@ export default function Header(props) {
   });
   const brandComponent = (
     <Link href="/components" as="/components">
-      <Button className={classes.title}>{brand}</Button>
+      <Button className={classes.title}><img src={require("../../assets/img/logo.png")} style={{width: 150}} /></Button>
     </Link>
   );
   return (

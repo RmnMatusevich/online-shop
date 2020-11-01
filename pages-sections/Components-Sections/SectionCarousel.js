@@ -32,8 +32,8 @@ export default function SectionCarousel({carousel}) {
           <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
             <Card carousel>
               <Carousel {...settings}>
-                {carousel.map(i => {
-                  return (<div>
+                {carousel.map((i, index) => {
+                  return (<div key={index}>
                             <img src={i.image} alt="Slide" className="slick-image" />
                           </div>)
                 })}

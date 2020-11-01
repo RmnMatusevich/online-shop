@@ -8,7 +8,12 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
 import Icon from "@material-ui/core/Icon";
-
+import InfoIcon from '@material-ui/icons/Info';
+import BuildIcon from '@material-ui/icons/Build';
+import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
+import DevicesOtherIcon from '@material-ui/icons/DevicesOther';
+import SettingsInputHdmiIcon from '@material-ui/icons/SettingsInputHdmi';
+import MemoryIcon from '@material-ui/icons/Memory';
 // @material-ui/icons
 import { Apps, CloudDownload } from "@material-ui/icons";
 import DeleteIcon from "@material-ui/icons/Delete";
@@ -26,89 +31,134 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
-      {/*<ListItem className={classes.listItem}>*/}
-      {/*  <CustomDropdown*/}
-      {/*    noLiPadding*/}
-      {/*    navDropdown*/}
-      {/*    buttonText="Components"*/}
-      {/*    buttonProps={{*/}
-      {/*      className: classes.navLink,*/}
-      {/*      color: "transparent"*/}
-      {/*    }}*/}
-      {/*    buttonIcon={Apps}*/}
-      {/*    dropdownList={[*/}
-      {/*      <Link href="/components">*/}
-      {/*        <a className={classes.dropdownLink}>All components</a>*/}
-      {/*      </Link>,*/}
-      {/*      <a*/}
-      {/*        href="https://creativetimofficial.github.io/nextjs-material-kit/#/documentation?ref=njsmk-navbar"*/}
-      {/*        target="_blank"*/}
-      {/*        className={classes.dropdownLink}*/}
-      {/*      >*/}
-      {/*        Documentation*/}
-      {/*      </a>*/}
-      {/*    ]}*/}
-      {/*  />*/}
-      {/*</ListItem>*/}
-      {/*<ListItem className={classes.listItem}>*/}
-      {/*  <Button*/}
-      {/*    href="https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmk-navbar"*/}
-      {/*    color="transparent"*/}
-      {/*    target="_blank"*/}
-      {/*    className={classes.navLink}*/}
-      {/*  >*/}
-      {/*    <Icon className={classes.icons}>unarchive</Icon> Upgrade to PRO*/}
-      {/*  </Button>*/}
-      {/*</ListItem>*/}
-      {/*<ListItem className={classes.listItem}>*/}
-      {/*  <Button*/}
-      {/*    href="https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-navbar"*/}
-      {/*    color="transparent"*/}
-      {/*    target="_blank"*/}
-      {/*    className={classes.navLink}*/}
-      {/*  >*/}
-      {/*    <CloudDownload className={classes.icons} /> Download*/}
-      {/*  </Button>*/}
-      {/*</ListItem>*/}
-      {/*<ListItem className={classes.listItem}>*/}
-      {/*  /!*<Tooltip title="Delete">*/}
-      {/*    <IconButton aria-label="Delete">*/}
-      {/*      <DeleteIcon />*/}
-      {/*    </IconButton>*/}
-      {/*  </Tooltip>*!/*/}
-      {/*  <Tooltip*/}
-      {/*    id="instagram-twitter"*/}
-      {/*    title="Follow us on twitter"*/}
-      {/*    placement={"top"}*/}
-      {/*    classes={{ tooltip: classes.tooltip }}*/}
-      {/*  >*/}
-      {/*    <Button*/}
-      {/*      href="https://twitter.com/CreativeTim?ref=creativetim"*/}
-      {/*      target="_blank"*/}
-      {/*      color="transparent"*/}
-      {/*      className={classes.navLink}*/}
-      {/*    >*/}
-      {/*      <i className={classes.socialIcons + " fab fa-twitter"} />*/}
-      {/*    </Button>*/}
-      {/*  </Tooltip>*/}
-      {/*</ListItem>*/}
       <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-facebook"
-          title="Follow us on facebook"
-          placement={"top"}
-          classes={{ tooltip: classes.tooltip }}
-        >
+        <CustomDropdown
+          noLiPadding
+          navDropdown
+          buttonText="Ремонт устройств"
+          buttonProps={{
+            className: classes.navLink,
+            color: "transparent"
+          }}
+          buttonIcon={BuildIcon}
+          dropdownList={[
+            <Link href="/repair/phone">
+              <a className={classes.dropdownLink}>Ремонт телефонов</a>
+            </Link>,
+              <Link href="/components">
+                  <a className={classes.dropdownLink}>Ремонт планшетов</a>
+              </Link>,
+              <Link href="/components">
+                  <a className={classes.dropdownLink}>Ремонт ноутбуков</a>
+              </Link>,
+              <Link href="/components">
+                  <a className={classes.dropdownLink}>Ремонт часов</a>
+              </Link>,
+              <Link href="/components">
+                  <a className={classes.dropdownLink}>Ремонт iqos</a>
+              </Link>,
+            // <a
+            //   href="https://creativetimofficial.github.io/nextjs-material-kit/#/documentation?ref=njsmk-navbar"
+            //   target="_blank"
+            //   className={classes.dropdownLink}
+            // >
+            //   Documentation
+            // </a>
+          ]}
+        />
+      </ListItem>
+        <ListItem className={classes.listItem}>
+            <CustomDropdown
+                noLiPadding
+                navDropdown
+                buttonText="Скупка устройств"
+                buttonProps={{
+                    className: classes.navLink,
+                    color: "transparent"
+                }}
+                buttonIcon={MonetizationOnIcon}
+                dropdownList={[
+                    <Link href="/components">
+                        <a className={classes.dropdownLink}>Продать телефон</a>
+                    </Link>,
+                    <Link href="/components">
+                        <a className={classes.dropdownLink}>Продать планшет</a>
+                    </Link>,
+                    <Link href="/components">
+                        <a className={classes.dropdownLink}>Продать ноутбук</a>
+                    </Link>,
+                    <Link href="/components">
+                        <a className={classes.dropdownLink}>Продать часы</a>
+                    </Link>,
+                ]}
+            />
+        </ListItem>
+        <ListItem className={classes.listItem}>
+            <CustomDropdown
+                noLiPadding
+                navDropdown
+                buttonText="Продажа устройств"
+                buttonProps={{
+                    className: classes.navLink,
+                    color: "transparent"
+                }}
+                buttonIcon={DevicesOtherIcon}
+                dropdownList={[
+                    <Link href="/components">
+                        <a className={classes.dropdownLink}>Телефоны</a>
+                    </Link>,
+                    <Link href="/components">
+                        <a className={classes.dropdownLink}>Планшеты</a>
+                    </Link>,
+                    <Link href="/components">
+                        <a className={classes.dropdownLink}>Ноутбуки</a>
+                    </Link>,
+                ]}
+            />
+        </ListItem>
+        <ListItem className={classes.listItem}>
+            <CustomDropdown
+                noLiPadding
+                navDropdown
+                buttonText="Аксессуары"
+                buttonProps={{
+                    className: classes.navLink,
+                    color: "transparent"
+                }}
+                buttonIcon={SettingsInputHdmiIcon}
+                dropdownList={[
+                    <Link href="/components">
+                        <a className={classes.dropdownLink}>Кабеля и зарядки</a>
+                    </Link>,
+                    <Link href="/components">
+                        <a className={classes.dropdownLink}>Чехлы</a>
+                    </Link>,
+                    <Link href="/components">
+                        <a className={classes.dropdownLink}>Стилусы</a>
+                    </Link>,
+                ]}
+            />
+        </ListItem>
+        <ListItem className={classes.listItem}>
           <Button
+            href="https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-navbar"
             color="transparent"
-            href="https://www.facebook.com/"
             target="_blank"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-facebook"} />
+            <MemoryIcon className={classes.icons} />Запчасти
           </Button>
-        </Tooltip>
-      </ListItem>
+        </ListItem>
+        <ListItem className={classes.listItem}>
+            <Button
+                href="https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-navbar"
+                color="transparent"
+                target="_blank"
+                className={classes.navLink}
+            >
+                <InfoIcon className={classes.icons} />Информация
+            </Button>
+        </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-tooltip"
