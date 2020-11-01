@@ -7,6 +7,13 @@ const path = require("path");
 module.exports = withPlugins([[withSass], [withImages]], {
   webpack(config, options) {
     config.resolve.modules.push(path.resolve("./"));
+      config.module.rules.push(
+          {
+              test: /\.md$/,
+              loader: 'frontmatter-markdown-loader',
+              options: { mode: ['react-component'] }
+          }
+      )
     return config;
-  }
+  },
 });

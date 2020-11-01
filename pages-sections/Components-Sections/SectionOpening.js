@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
-import styles from "assets/jss/nextjs-material-kit/pages/componentsSections/basicsStyle.js";
+import styles from "assets/jss/nextjs-material-kit/pages/componentsSections/completedStyle.js";
 import GridItem from "../../components/Grid/GridItem";
 import GridContainer from "../../components/Grid/GridContainer";
 
@@ -17,7 +17,7 @@ const SectionOpening = () => {
                     </div>
                     <GridContainer justify="center">
                         <GridItem xs={12} sm={12} md={8}>
-                            Наш сервис Tech Tag открывается в Польше! Ремонты любой сложности мобильных телефонов, планшетов, ноутбуков, компьютеров
+                            <h4>Наш сервис Tech Tag открывается в Польше! Ремонты любой сложности мобильных телефонов, планшетов, ноутбуков, компьютеров</h4>
                         </GridItem>
                     </GridContainer>
                 </div>
