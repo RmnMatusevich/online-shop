@@ -34,9 +34,12 @@ import styles from "assets/jss/nextjs-material-kit/pages/components.js";
 
 const useStyles = makeStyles(styles);
 
+import { attributes, react as HomeContent } from '../content/main.md';
+
 export default function Components(props) {
   const classes = useStyles();
   const { ...rest } = props;
+  const { title, subtitle, backgroundImage} = attributes;
   return (
     <div>
       <Header
@@ -55,9 +58,9 @@ export default function Components(props) {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>Tech Tag</h1>
+                <h1 className={classes.title}>{title}</h1>
                 <h3 className={classes.subtitle}>
-                    Лучшие услуги по продаже и покупки
+                    {subtitle}
                 </h3>
               </div>
             </GridItem>
