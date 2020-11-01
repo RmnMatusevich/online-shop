@@ -2,16 +2,8 @@
 title: 'TechTag '
 subtitle: Ремонт телефонов и продажа
 backgroundImage: /img/header_photo.jpg
-openingTitle: Открытие
+openingTitle: О нас
 openingDescription: >-
-  Ремонты любой сложности мобильных телефонов, планшетов, ноутбуков,
-  компьютеров.
-carousel:
-  - image: /img/header_photo.jpg
-  - image: /img/снимок-экрана-2020-07-30-в-01.16.32.png
-  - image: /img/header_photo.jpg
-aboutUsTitle: О нас
-aboutUsDescription: >-
   Ремонт цифровой техники в сервисном центре TechTag
 
   Ремонт смартфонов: iPhone, Samsung, Xiaomi, Huawei, Sony, Lenovo, ZTE, Nokia,
@@ -49,5 +41,11 @@ aboutUsDescription: >-
   Для офисов и юридических лиц оказываем индивидуальные услуги по подготовке и
   настройке рабочих мест. Проводим интернет-соединение, комплексное обслуживание
   офисной техники, ставим необходимый для сотрудников софт.
+carousel:
+  - image: /img/header_photo.jpg
+  - image: /img/снимок-экрана-2020-07-30-в-01.16.32.png
+  - image: /img/header_photo.jpg
+aboutUsTitle: О нас
+aboutUsDescription: fggfg
 ---
 
