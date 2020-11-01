@@ -27,9 +27,12 @@ collections:
           - { label: "Title", name: "title", widget: "string"}
           - { label: "Subtitle", name: "subtitle", widget: "string"}
           - { label: "BackgroundImage", name: "backgroundImage", widget: "image"}
+          - { label: "OpeningTitle", name: "openingTitle", widget: "string"}
+          - { label: "OpeningDescription", name: "openingDescription", widget: "text"}
           - label: 'Carousel'
             name: "carousel"
             widget: list
             fields:
               - { label: "Image", name: "image", widget: "image"}
-#              - { label: "Description", name: "description", widget: "text"}
+          - { label: "AboutUsTitle", name: "aboutUsTitle", widget: "string"}
+          - { label: "AboutUsDescription", name: "aboutUsDescription", widget: "text"}

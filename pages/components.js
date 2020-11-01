@@ -76,9 +76,9 @@ export default function Components(props) {
         {/*<SectionNotifications />*/}
         {/*<SectionTypography />*/}
         {/*<SectionJavascript />*/}
-        <SectionOpening />
-        <SectionCarousel />
-        <SectionAboutUs />
+        <SectionOpening description={attributes.openingDescription} title={attributes.openingTitle} />
+        <SectionCarousel carousel={attributes.carousel}/>
+        <SectionAboutUs title={attributes.aboutUsTitle} description={attributes.aboutUsDescription} />
         {/*<SectionCompletedExamples />*/}
         {/*<SectionLogin />*/}
         {/*<GridItem md={12} className={classes.textCenter}>*/}

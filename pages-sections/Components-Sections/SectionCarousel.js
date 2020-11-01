@@ -10,16 +10,12 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 
-import image1 from "assets/img/bg.jpg";
-import image2 from "assets/img/bg2.jpg";
-import image3 from "assets/img/bg3.jpg";
-
 import styles from "assets/jss/nextjs-material-kit/pages/componentsSections/carouselStyle.js";
 import { attributes, react as HomeContent } from '../../content/main.md';
 
 const useStyles = makeStyles(styles);
 
-export default function SectionCarousel() {
+export default function SectionCarousel({carousel}) {
   const classes = useStyles();
   const settings = {
     dots: true,
@@ -36,7 +32,7 @@ export default function SectionCarousel() {
           <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
             <Card carousel>
               <Carousel {...settings}>
-                {attributes.carousel.map(i => {
+                {carousel.map(i => {
                   return (<div>
                             <img src={i.image} alt="Slide" className="slick-image" />
                           </div>)
