@@ -10,9 +10,9 @@ const RepairBrand = ({brandTitle, brands}) => {
                 {brands.map((brand, index) => {
                     return (
                         <Link href={brand.brandUrl}>
-                            <Card style={{display: "flex", gap: 30, width: 300, height: 300, justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
-                                <img style={{width: 200, height: 200, borderRadius: 40}} src={require(`../../public${brand.brandImage}`)} />
-                                <Typography variant="h6">{brand.brandName}</Typography>
+                            <Card style={{display: "flex", gap: 12, width: 260, height: 260, justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
+                                <img style={{width: 150, height: 150, borderRadius: 30}} src={require(`../../public${brand.brandImage}`)} />
+                                <Typography variant="h6" style={{letterSpacing: 1.2}}>{brand.brandName}</Typography>
                             </Card>
                         </Link>
                     );

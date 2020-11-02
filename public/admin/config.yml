@@ -37,9 +37,9 @@ collections:
           - { label: "AboutUsTitle", name: "aboutUsTitle", widget: "string"}
           - { label: "AboutUsDescription", name: "aboutUsDescription", widget: "text"}
       - label: "RepairPhone"
-          name: "repairPhone"
-          file: "content/repair-phone.md"
-          fields:
+        name: "repairPhone"
+        file: "content/repair-phone.md"
+        fields:
             - { label: "Title", name: "title", widget: "string"}
             - { label: "Subtitle", name: "subtitle", widget: "string"}
             - { label: "BackgroundImage", name: "backgroundImage", widget: "image"}
