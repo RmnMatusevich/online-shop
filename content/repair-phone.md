@@ -13,5 +13,14 @@ brands:
   - brandImage: /img/200px-xiaomi_logo.svg.webp
     brandName: xiaomi
     brandUrl: /dlskfskfsd
+  - brandImage: /img/meizu_logo-200x200.jpg
+    brandName: meizu
+    brandUrl: /sdfsdf
+  - brandImage: /img/apple.gif
+    brandName: apple
+    brandUrl: /apple
+  - brandImage: /img/samsung-logo_apple.jpg
+    brandName: samsung
+    brandUrl: /samsung
 ---
 
