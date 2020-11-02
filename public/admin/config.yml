@@ -36,3 +36,18 @@ collections:
               - { label: "Image", name: "image", widget: "image"}
           - { label: "AboutUsTitle", name: "aboutUsTitle", widget: "string"}
           - { label: "AboutUsDescription", name: "aboutUsDescription", widget: "text"}
+      - label: "RepairPhone"
+          name: "repairPhone"
+          file: "content/repair-phone.md"
+          fields:
+            - { label: "Title", name: "title", widget: "string"}
+            - { label: "Subtitle", name: "subtitle", widget: "string"}
+            - { label: "BackgroundImage", name: "backgroundImage", widget: "image"}
+            - { label: "BrandTitle", name: "brandTitle", widget: "string"}
+            - label: 'Brands'
+              name: "brands"
+              widget: list
+              fields:
+                - { label: "BrandImage", name: "brandImage", widget: "image"}
+                - { label: "BrandName", name: "brandName", widget: "string"}
+                - { label: "BrandUrl", name: "brandUrl", widget: "string"}

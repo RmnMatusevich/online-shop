@@ -46,7 +46,7 @@ export default function Components(props) {
         brand="Tech Tag"
         rightLinks={<HeaderLinks />}
         fixed
-        color="transparent"
+        color="white"
         changeColorOnScroll={{
           height: 400,
           color: "white"

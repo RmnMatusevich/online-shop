@@ -7,17 +7,14 @@ import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
-import Icon from "@material-ui/core/Icon";
-import InfoIcon from '@material-ui/icons/Info';
-import BuildIcon from '@material-ui/icons/Build';
-import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
-import DevicesOtherIcon from '@material-ui/icons/DevicesOther';
-import SettingsInputHdmiIcon from '@material-ui/icons/SettingsInputHdmi';
-import MemoryIcon from '@material-ui/icons/Memory';
 // @material-ui/icons
-import { Apps, CloudDownload } from "@material-ui/icons";
-import DeleteIcon from "@material-ui/icons/Delete";
-import IconButton from "@material-ui/core/IconButton";
+import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
+import BuildOutlinedIcon from '@material-ui/icons/BuildOutlined';
+import MonetizationOnOutlinedIcon from '@material-ui/icons/MonetizationOnOutlined';
+import DevicesOtherIcon from '@material-ui/icons/DevicesOther';
+import SettingsInputHdmiOutlinedIcon from '@material-ui/icons/SettingsInputHdmiOutlined';
+import MemoryIcon from '@material-ui/icons/Memory';
+
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
@@ -28,6 +25,7 @@ import styles from "assets/jss/nextjs-material-kit/components/headerLinksStyle.j
 const useStyles = makeStyles(styles);
 
 export default function HeaderLinks(props) {
+
   const classes = useStyles();
   return (
     <List className={classes.list}>
@@ -40,11 +38,11 @@ export default function HeaderLinks(props) {
             className: classes.navLink,
             color: "transparent"
           }}
-          buttonIcon={BuildIcon}
+          buttonIcon={BuildOutlinedIcon}
           dropdownList={[
-            <Link href="/repair/phone">
-              <a className={classes.dropdownLink}>Ремонт телефонов</a>
-            </Link>,
+              <Link href="/repair/phone">
+                  <a className={classes.dropdownLink}>Ремонт телефонов</a>
+              </Link>,
               <Link href="/components">
                   <a className={classes.dropdownLink}>Ремонт планшетов</a>
               </Link>,
@@ -76,7 +74,7 @@ export default function HeaderLinks(props) {
                     className: classes.navLink,
                     color: "transparent"
                 }}
-                buttonIcon={MonetizationOnIcon}
+                buttonIcon={MonetizationOnOutlinedIcon}
                 dropdownList={[
                     <Link href="/components">
                         <a className={classes.dropdownLink}>Продать телефон</a>
@@ -125,7 +123,7 @@ export default function HeaderLinks(props) {
                     className: classes.navLink,
                     color: "transparent"
                 }}
-                buttonIcon={SettingsInputHdmiIcon}
+                buttonIcon={SettingsInputHdmiOutlinedIcon}
                 dropdownList={[
                     <Link href="/components">
                         <a className={classes.dropdownLink}>Кабеля и зарядки</a>
@@ -156,7 +154,7 @@ export default function HeaderLinks(props) {
                 target="_blank"
                 className={classes.navLink}
             >
-                <InfoIcon className={classes.icons} />Информация
+                <InfoOutlinedIcon className={classes.icons} />Информация
             </Button>
         </ListItem>
       <ListItem className={classes.listItem}>
