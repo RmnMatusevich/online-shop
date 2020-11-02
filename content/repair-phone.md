@@ -10,5 +10,8 @@ brands:
   - brandImage: /img/header_photo.jpg
     brandName: Apple
     brandUrl: /reapair/phone/apple
+  - brandImage: /img/200px-xiaomi_logo.svg.webp
+    brandName: xiaomi
+    brandUrl: /dlskfskfsd
 ---
 
