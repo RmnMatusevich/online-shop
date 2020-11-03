@@ -8,7 +8,7 @@ product:
       Крутой телефон Крутой телефон Крутой телефон Крутой телефон Крутой телефон
       Крутой телефон Крутой телефон Крутой телефон Крутой телефон Крутой телефон
       Крутой телефон Крутой телефон Крутой телефон Крутой телефон 
-    appleProductImage: /img/apple.gif
+    appleProductImage: /img/meizu_logo-200x200.jpg
     appleProductName: iPhone XR
     appleProductUrl: /repair/phone/apple
     appleProductYear: 2020-02-04T21:00:00.000Z
