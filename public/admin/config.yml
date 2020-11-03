@@ -51,3 +51,20 @@ collections:
                 - { label: "BrandImage", name: "brandImage", widget: "image"}
                 - { label: "BrandName", name: "brandName", widget: "string"}
                 - { label: "BrandUrl", name: "brandUrl", widget: "string"}
+      - label: "RepairPhoneApple"
+        name: "repairPhoneApple"
+        file: "content/repair-phone-apple.md"
+        fields:
+            - { label: "Title", name: "title", widget: "string"}
+            - { label: "Subtitle", name: "subtitle", widget: "string"}
+            - { label: "BackgroundImage", name: "backgroundImage", widget: "image"}
+            - { label: "PhoneAppleTitle", name: "phoneAppleTitle", widget: "string"}
+            - label: 'Product'
+              name: "product"
+              widget: list
+              fields:
+                - { label: "AppleProductImage", name: "appleProductImage", widget: "image"}
+                - { label: "AppleProductName", name: "appleProductName", widget: "string"}
+                - { label: "AppleProductDescription", name: "appleProductDescription", widget: "text"}
+                - { label: "AppleProductYear", name: "appleProductYear", widget: "datetime" default: "", date_format: "YYYY"}
+                - { label: "AppleProductUrl", name: "appleProductUrl", widget: "string"}          
