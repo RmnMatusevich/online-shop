@@ -66,5 +66,5 @@ collections:
                 - { label: "AppleProductImage", name: "appleProductImage", widget: "image"}
                 - { label: "AppleProductName", name: "appleProductName", widget: "string"}
                 - { label: "AppleProductDescription", name: "appleProductDescription", widget: "text"}
-                - { label: "AppleProductYear", name: "appleProductYear", widget: "datetime" default: "", date_format: "YYYY"}
+                - { label: "AppleProductYear", name: "appleProductYear", widget: "datetime", default: "", date_format: "YYYY"}
                 - { label: "AppleProductUrl", name: "appleProductUrl", widget: "string"}          
