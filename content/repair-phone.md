@@ -6,7 +6,7 @@ brandTitle: Выберите бренд
 brands:
   - brandImage: /img/apple_brand.svg
     brandName: Apple
-    brandUrl: /reapair/phone/apple
+    brandUrl: /repair/phone/apple
   - brandImage: /img/sony_brand.svg
     brandName: Sony
     brandUrl: /repair/phone/sony
