@@ -7,7 +7,7 @@ brands:
   - brandImage: /img/apple_brand.svg
     brandName: Coursera
     brandUrl: /repair/phone/apple
-  - brandImage: /img/header_photo.jpg
+  - brandImage: /img/appppple.svg
     brandName: Apple
     brandUrl: /reapair/phone/apple
   - brandImage: /img/200px-xiaomi_logo.svg.webp
