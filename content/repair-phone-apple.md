@@ -1,6 +1,7 @@
 ---
 title: Починить телефон Apple
 subtitle: Мы сделаем это легко жестко и красиво
+backgroundImage: /img/header_photo.jpg
 phoneAppleTitle: Выберите модель
 product:
   - appleProductDescription: >-
@@ -9,7 +10,7 @@ product:
       Крутой телефон Крутой телефон Крутой телефон Крутой телефон 
     appleProductImage: /img/apple_brand.svg
     appleProductName: iPhone XR
-    appleProductUrl: /repair/phone/apple
+    appleProductUrl: /repair/phone/apple/iphone-xr
     appleProductYear: 2020-02-04T21:00:00.000Z
   - appleProductDescription: >-
       asus
