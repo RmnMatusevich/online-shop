@@ -46,11 +46,10 @@ const Index = ({ router: { query } }) => {
             </Parallax>
             <div className={classNames(classes.main, classes.mainRaised)}>
                 <div>
-                    {elem.appleProductName}
-                    {elem.appleProductDescription}
-                    {elem.appleProductYear}
-                    {elem.appleProductYear}
-                    <img src={require(`../../../../public${elem.appleProductImage}`)}></img>
+                    {elem && elem.appleProductName ? elem.appleProductName : null}
+                    {elem && elem.appleProductDescription ? elem.appleProductDescription : null}
+                    {elem && elem.appleProductYear ? elem.appleProductYear : null}
+                    {elem && elem.appleProductImage ? <img src={require(`../../../../public${elem.appleProductImage}`)} /> : null}
                 </div>
             </div>
             <Footer />
