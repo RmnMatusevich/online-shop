@@ -12,12 +12,5 @@ product:
     appleProductName: iPhone XR
     appleProductUrl: iphone-xr
     appleProductYear: 2020-02-04T21:00:00.000Z
-  - appleProductDescription: >-
-      asus
-      asusasusasusasusasusasusasusasusasusasusasusasusasusasusasusasusasusasusasusasusasusasusasusasusasus
-    appleProductImage: /img/asus_brand.svg
-    appleProductName: asus
-    appleProductUrl: /repair/phone/apple/123
-    appleProductYear: 2020-10-27T21:00:00.000Z
 ---
 
