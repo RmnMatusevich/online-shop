@@ -10,7 +10,7 @@ product:
       Крутой телефон Крутой телефон Крутой телефон Крутой телефон 
     appleProductImage: /img/apple_brand.svg
     appleProductName: iPhone XR
-    appleProductUrl: /iphone-xr
+    appleProductUrl: iphone-xr
     appleProductYear: 2020-02-04T21:00:00.000Z
   - appleProductDescription: >-
       asus
