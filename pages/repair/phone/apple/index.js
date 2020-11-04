@@ -1,27 +1,27 @@
-import { attributes } from "../../../content/repair-phone.md";
-import Header from "../../../components/Header/Header";
-import HeaderLinks from "../../../components/Header/HeaderLinks";
-import Parallax from "../../../components/Parallax/Parallax";
-import GridContainer from "../../../components/Grid/GridContainer";
-import GridItem from "../../../components/Grid/GridItem";
+import { attributes } from "../../../../content/repair-phone-apple.md";
+import Header from "../../../../components/Header/Header";
+import HeaderLinks from "../../../../components/Header/HeaderLinks";
+import Parallax from "../../../../components/Parallax/Parallax";
+import GridContainer from "../../../../components/Grid/GridContainer";
+import GridItem from "../../../../components/Grid/GridItem";
 import classNames from "classnames";
-import SectionOpening from "../../../pages-sections/Components-Sections/SectionOpening";
-import SectionCarousel from "../../../pages-sections/Components-Sections/SectionCarousel";
-import SectionAboutUs from "../../../pages-sections/Components-Sections/SectionAboutUs";
-import Footer from "../../../components/Footer/Footer";
+import SectionOpening from "../../../../pages-sections/Components-Sections/SectionOpening";
+import SectionCarousel from "../../../../pages-sections/Components-Sections/SectionCarousel";
+import SectionAboutUs from "../../../../pages-sections/Components-Sections/SectionAboutUs";
+import Footer from "../../../../components/Footer/Footer";
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Card from "../../../components/Card/Card";
+import Card from "../../../../components/Card/Card";
 import styles from "assets/jss/nextjs-material-kit/pages/components.js";
-import TeamSection from "../../../pages-sections/LandingPage-Sections/TeamSection";
-import RepairBrand from "../../../components/Repair/RepairBrand";
+import TeamSection from "../../../../pages-sections/LandingPage-Sections/TeamSection";
+import RepairPhone from "../../../../components/Repair/RepairPhone";
 
 const useStyles = makeStyles(styles);
 
 export default function Index(props) {
     const classes = useStyles();
     const { ...rest } = props;
-    const { title, subtitle, backgroundImage, brandTitle, brands } = attributes;
+    const { title, subtitle, phoneAppleTitle, product } = attributes;
     return (
         <div>
             <Header
@@ -35,7 +35,7 @@ export default function Index(props) {
                 }}
                 {...rest}
             />
-            <Parallax image={require(`../../../public${backgroundImage}`)}>
+            <Parallax image={require(`../../../../assets/img/bg.jpg`)}>
                 <div className={classes.container}>
                     <GridContainer>
                         <GridItem>
@@ -51,7 +51,7 @@ export default function Index(props) {
             </Parallax>
 
             <div className={classNames(classes.main, classes.mainRaised)}>
-                <RepairBrand brandTitle={brandTitle} brands={brands} />
+                <RepairPhone phoneAppleTitle={phoneAppleTitle} product={product} />
                 <SectionAboutUs title={attributes.aboutUsTitle} description={attributes.aboutUsDescription} />
             </div>
             <Footer />

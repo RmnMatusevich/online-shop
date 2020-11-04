@@ -1,7 +1,6 @@
 ---
 title: Починить телефон Apple
 subtitle: Мы сделаем это легко жестко и красиво
-backgroundImage: /img/header_photo.jpg
 phoneAppleTitle: Выберите модель
 product:
   - appleProductDescription: >-
