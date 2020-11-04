@@ -27,9 +27,9 @@ const RepairPhone = ({ phoneAppleTitle, product }) => {
             <div style={{ display: "flex", gap: 10, flexDirection: "row", alignItems: "center", flexWrap: "wrap", width: '80%', margin: '0 auto', justifyContent: 'center' }}>
                 {product.map((i, index) => {
                     return (
-                        <Link href={i.appleProductUrl} key={index}>
+                        <Link href={`/repair/phone/apple/${i.appleProductUrl}`} key={index}>
                             <StyledCard>
-                                {/* <img style={{ width: 150, height: 150, borderRadius: 30 }} src={require(`../../../public${i.appleProductImage}`)} /> */}
+                                <img style={{ width: 150, height: 150, borderRadius: 30 }} src={require(`../../public${i.appleProductImage}`)} />
                                 <Typography variant="h6" style={{ letterSpacing: 1.2 }}>{i.appleProductName}</Typography>
                             </StyledCard>
                         </Link>
