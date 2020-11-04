@@ -1,4 +1,4 @@
-import {attributes} from "../../../content/repair-phone.md";
+import { attributes } from "../../../content/repair-phone.md";
 import Header from "../../../components/Header/Header";
 import HeaderLinks from "../../../components/Header/HeaderLinks";
 import Parallax from "../../../components/Parallax/Parallax";
@@ -51,7 +51,7 @@ export default function Index(props) {
             </Parallax>
 
             <div className={classNames(classes.main, classes.mainRaised)}>
-                <RepairBrand brandTitle={brandTitle} brands={brands}/>
+                <RepairBrand brandTitle={brandTitle} brands={brands} />
                 <SectionAboutUs title={attributes.aboutUsTitle} description={attributes.aboutUsDescription} />
             </div>
             <Footer />

@@ -59,8 +59,8 @@ collections:
             - { label: "Subtitle", name: "subtitle", widget: "string"}
             - { label: "BackgroundImage", name: "backgroundImage", widget: "image"}
             - { label: "PhoneAppleTitle", name: "phoneAppleTitle", widget: "string"}
-            - label: 'Product'
-              name: "product"
+            - label: 'Products'
+              name: "products"
               widget: list
               fields:
                 - { label: "AppleProductImage", name: "appleProductImage", widget: "image"}

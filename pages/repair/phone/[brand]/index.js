@@ -15,13 +15,21 @@ import Card from "../../../../components/Card/Card";
 import styles from "assets/jss/nextjs-material-kit/pages/components.js";
 import TeamSection from "../../../../pages-sections/LandingPage-Sections/TeamSection";
 import RepairPhone from "../../../../components/Repair/RepairPhone";
+import { useRouter } from 'next/router'
 
 const useStyles = makeStyles(styles);
 
 export default function Index(props) {
+
+    const router = useRouter()
+    const { brand, data } = router.query
+    console.log(brand, data);
+    if (brand === 'apple') {
+
+    }
     const classes = useStyles();
     const { ...rest } = props;
-    const { title, subtitle, phoneAppleTitle, product } = attributes;
+    const { title, subtitle, phoneAppleTitle, products } = attributes;
     return (
         <div>
             <Header
@@ -51,7 +59,7 @@ export default function Index(props) {
             </Parallax>
 
             <div className={classNames(classes.main, classes.mainRaised)}>
-                <RepairPhone phoneAppleTitle={phoneAppleTitle} product={product} />
+                <RepairPhone phoneAppleTitle={phoneAppleTitle} products={products} />
                 <SectionAboutUs title={attributes.aboutUsTitle} description={attributes.aboutUsDescription} />
             </div>
             <Footer />
