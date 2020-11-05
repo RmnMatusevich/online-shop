@@ -23,9 +23,10 @@ export default function Index(props) {
 
     const router = useRouter()
     const { brand, data } = router.query
-    console.log(brand, data);
+    console.log("BRAND: ", brand);
     if (brand === 'apple') {
-
+    const aa = require("../../../../content/repair-phone-apple.md");
+        console.log("AAAAAA: ", aa)
     }
     const classes = useStyles();
     const { ...rest } = props;
