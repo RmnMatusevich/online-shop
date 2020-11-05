@@ -69,7 +69,7 @@ collections:
               - { label: "productImage", name: "productImage", widget: "image"}
               - { label: "productName", name: "productName", widget: "string"}
               - { label: "productDescription", name: "productDescription", widget: "text"}
-              - { label: "productYear", name: "productYear", widget: "datetime", default: "", date_format: "YYYY"}
+              - { label: "productYear", name: "productYear", widget: "number", default: 2020, value_type: "int"}
               - { label: "productUrl", name: "productUrl", widget: "string"}
       - label: "RepairPhoneSony"
         name: "repairPhoneSony"
@@ -86,7 +86,7 @@ collections:
               - { label: "productImage", name: "productImage", widget: "image"}
               - { label: "productName", name: "productName", widget: "string"}
               - { label: "productDescription", name: "productDescription", widget: "text"}
-              - { label: "productYear", name: "productYear", widget: "datetime", default: "", date_format: "YYYY"}
+              - { label: "productYear", name: "productYear", widget: "number", default: 2020, value_type: "int"}
               - { label: "productUrl", name: "productUrl", widget: "string"}
       - label: "RepairPhoneSamsung"
         name: "repairPhoneSamsung"
@@ -103,5 +103,5 @@ collections:
               - { label: "productImage", name: "productImage", widget: "image"}
               - { label: "productName", name: "productName", widget: "string"}
               - { label: "productDescription", name: "productDescription", widget: "text"}
-              - { label: "productYear", name: "productYear", widget: "date", default: "", format: "YYYY"}
+              - { label: "productYear", name: "productYear", widget: "number", default: 2020, value_type: "int"}
               - { label: "productUrl", name: "productUrl", widget: "string"}
