@@ -1,5 +1,6 @@
 const repairPhoneApple = require("../../../../content/repair-phone-apple.md");
 const repairPhoneSony = require("../../../../content/repair-phone-sony.md");
+const repairPhoneSamsung = require("../../../../content/repair-phone-samsung.md");
 
 import Header from "../../../../components/Header/Header";
 import HeaderLinks from "../../../../components/Header/HeaderLinks";
@@ -27,17 +28,19 @@ export default function Index(props) {
     const router = useRouter()
     const { brand, data } = router.query
     if (brand === 'apple') {
-        console.log("AAAAPPLE")
         phoneData = repairPhoneApple.attributes;
-        console.log("phoneData : ", phoneData)
         title = phoneData.title;
         subtitle = phoneData.subtitle
         phoneTitle = phoneData.phoneTitle
         products = phoneData.products
     }else if (brand === 'sony'){
-        console.log("AAAAPPLE")
         phoneData = repairPhoneSony.attributes;
-        console.log("phoneData : ", phoneData)
+        title = phoneData.title;
+        subtitle = phoneData.subtitle
+        phoneTitle = phoneData.phoneTitle
+        products = phoneData.products
+    }else if (brand === 'samsung'){
+        phoneData = repairPhoneSamsung.attributes;
         title = phoneData.title;
         subtitle = phoneData.subtitle
         phoneTitle = phoneData.phoneTitle

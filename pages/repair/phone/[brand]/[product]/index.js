@@ -59,11 +59,10 @@ const Index = () => {
                     {products.map((i, index) => {
                         return (
                             <div key={index}>
-                                {i.appleProductDescription}
-                                <img src={i.appleProductImage} />
-                                {i.appleProductName}
-                                {i.appleProductUrl}
-
+                                {i.productDescription}
+                                <img src={i.productImage} />
+                                {i.productName}
+                                {i.productUrl}
                             </div>
                         )
                     })}
