@@ -78,7 +78,7 @@ export default function Index(props) {
             </Parallax>
 
             <div className={classNames(classes.main, classes.mainRaised)}>
-                <RepairPhone phoneTitle={phoneTitle} products={products} />
+                {/*<RepairPhone phoneTitle={phoneTitle} products={products} />*/}
                 {/*<SectionAboutUs title={attributes.aboutUsTitle} description={attributes.aboutUsDescription} />*/}
             </div>
             <Footer />
