@@ -1,4 +1,6 @@
-import { attributes } from "../../../../content/repair-phone-apple.md";
+const repairPhoneApple = require("../../../../content/repair-phone-apple.md");
+const repairPhoneSony = require("../../../../content/repair-phone-sony.md");
+
 import Header from "../../../../components/Header/Header";
 import HeaderLinks from "../../../../components/Header/HeaderLinks";
 import Parallax from "../../../../components/Parallax/Parallax";
@@ -9,7 +11,7 @@ import SectionOpening from "../../../../pages-sections/Components-Sections/Secti
 import SectionCarousel from "../../../../pages-sections/Components-Sections/SectionCarousel";
 import SectionAboutUs from "../../../../pages-sections/Components-Sections/SectionAboutUs";
 import Footer from "../../../../components/Footer/Footer";
-import React from "react";
+import React, {useState} from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "../../../../components/Card/Card";
 import styles from "assets/jss/nextjs-material-kit/pages/components.js";
@@ -20,17 +22,30 @@ import { useRouter } from 'next/router'
 const useStyles = makeStyles(styles);
 
 export default function Index(props) {
-
+    let phoneData;
+    let title, subtitle, phoneTitle, products;
     const router = useRouter()
     const { brand, data } = router.query
-    console.log("BRAND: ", brand);
     if (brand === 'apple') {
-    const aa = require("../../../../content/repair-phone-apple.md");
-        console.log("AAAAAA: ", aa)
+        console.log("AAAAPPLE")
+        phoneData = repairPhoneApple.attributes;
+        console.log("phoneData : ", phoneData)
+        title = phoneData.title;
+        subtitle = phoneData.subtitle
+        phoneTitle = phoneData.phoneTitle
+        products = phoneData.products
+    }else if (brand === 'sony'){
+        console.log("AAAAPPLE")
+        phoneData = repairPhoneSony.attributes;
+        console.log("phoneData : ", phoneData)
+        title = phoneData.title;
+        subtitle = phoneData.subtitle
+        phoneTitle = phoneData.phoneTitle
+        products = phoneData.products
     }
     const classes = useStyles();
     const { ...rest } = props;
-    const { title, subtitle, phoneAppleTitle, products } = attributes;
+    // const { title, subtitle, phoneTitle, products } = phoneData;
     return (
         <div>
             <Header
@@ -60,8 +75,8 @@ export default function Index(props) {
             </Parallax>
 
             <div className={classNames(classes.main, classes.mainRaised)}>
-                <RepairPhone phoneAppleTitle={phoneAppleTitle} products={products} />
-                <SectionAboutUs title={attributes.aboutUsTitle} description={attributes.aboutUsDescription} />
+                <RepairPhone phoneTitle={phoneTitle} products={products} />
+                {/*<SectionAboutUs title={attributes.aboutUsTitle} description={attributes.aboutUsDescription} />*/}
             </div>
             <Footer />
         </div>

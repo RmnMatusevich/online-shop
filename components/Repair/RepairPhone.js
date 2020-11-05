@@ -20,17 +20,17 @@ const StyledCard = withStyles({
     }
 })(Card);
 
-const RepairPhone = ({ phoneAppleTitle, products }) => {
+const RepairPhone = ({ phoneTitle, products }) => {
     return (
         <>
-            <Typography variant="h3">{phoneAppleTitle}</Typography>
+            <Typography variant="h3">{phoneTitle}</Typography>
             <div style={{ display: "flex", gap: 10, flexDirection: "row", alignItems: "center", flexWrap: "wrap", width: '80%', margin: '0 auto', justifyContent: 'center' }}>
                 {products.map((i, index) => {
                     return (
-                        <Link as={`/repair/phone/apple/${i.appleProductUrl}`} href={`/repair/phone/[brand]/[product]?data=sdfsdfsdsdfwerfergfergtrwqeyshgwre`} key={index}>
+                        <Link as={`/repair/phone/apple/${i.productUrl}`} href={`/repair/phone/[brand]/[product]?data=sdfsdfsdsdfwerfergfergtrwqeyshgwre`} key={index}>
                             <StyledCard>
-                                <img style={{ width: 150, height: 150, borderRadius: 30 }} src={require(`../../public${i.appleProductImage}`)} />
-                                <Typography variant="h6" style={{ letterSpacing: 1.2 }}>{i.appleProductName}</Typography>
+                                <img style={{ width: 150, height: 150, borderRadius: 30 }} src={require(`../../public${i.productImage}`)} />
+                                <Typography variant="h6" style={{ letterSpacing: 1.2 }}>{i.productName}</Typography>
                             </StyledCard>
                         </Link>
                     );
