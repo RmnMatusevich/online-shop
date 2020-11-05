@@ -2,7 +2,7 @@
 title: Sony Phone
 subtitle: sony sony sony
 backgroundImage: /img/xrxrxr.webp
-phoneAppleTitle: SONY CHOOSING
+phoneTitle: Sonyyyy 42
 products:
   - productDescription: >-
       sonyyyy 232sonyyyy 232sonyyyy 232sonyyyy 232sonyyyy 232sonyyyy 232sonyyyy
@@ -10,6 +10,6 @@ products:
     productImage: /img/xrxrxr.webp
     productName: sonyyyy 232
     productUrl: sonyyyy-232
-    productYear: 2020-10-27T21:00:00.000Z
+    productYear: 2027
 ---
 
