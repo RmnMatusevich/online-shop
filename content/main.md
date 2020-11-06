@@ -42,7 +42,7 @@ openingDescription: >-
   настройке рабочих мест. Проводим интернет-соединение, комплексное обслуживание
   офисной техники, ставим необходимый для сотрудников софт.
 carousel:
-  - image: /img/header_photo.jpg
+  - image: /img/acer_brand.svg
   - image: /img/apple_brand.svg
   - image: /img/header_photo.jpg
 aboutUsTitle: О нас
