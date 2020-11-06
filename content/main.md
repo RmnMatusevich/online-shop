@@ -1,7 +1,7 @@
 ---
 title: 'TechTag '
 subtitle: Ремонт телефонов и продажа
-backgroundImage: /img/header_photo.jpg
+backgroundImage: /img/apple_brand.svg
 openingTitle: О нас
 openingDescription: >-
   Ремонт цифровой техники в сервисном центре TechTag
